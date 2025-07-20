@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "live-server",
+    "start-frontend": "live-server",
+    "start-backend": "node backend/server.js",
+    "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,6 +13,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "concurrently": "^9.2.0",
     "live-server": "^1.2.1"
   }
 }
