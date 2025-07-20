@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 
 app.get('/api/ping', (req, res) => {
-  res.json({ message: 'Hallo van de backend server!' });
+  res.json({ message: 'groetjes van de backend server!' });
 });
 
 app.listen(port, () => {
