@@ -1,0 +1,3 @@
+In deze map worden alle assets bijgehouden. 
+
+VB. afbeeldingen, audio bestanden, ... 
